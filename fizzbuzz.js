@@ -1,15 +1,18 @@
-//
-// This is only a SKELETON file for the 'FizzBuzz' exercise. It's been provided as a
-// convenience to get you started writing code faster.
-// Make sure to look at test.script.js--that should give you some hints about what is
-// expected here.
+function fizzbuzz(nombre) {
+    if (nombre % 3 === 0 && nombre % 5 === 0) {
+      return "fizzbuzz";
+    } else if (nombre % 3 === 0) {
+      return "fizz";
+    } else if (nombre % 5 === 0) {
+      return "buzz";
+    } else {
+      return nombre;
+    }
+  }
+  
 
-'use strict';
-
-var fizzbuzz = function (x) {
-//
-// YOUR CODE GOES HERE
-//
-};
-
-module.exports = { fizzbuzz: fizzbuzz };
+  console.log(fizzbuzz(2));
+  console.log(fizzbuzz(5));
+  console.log(fizzbuzz(6));
+  console.log(fizzbuzz(11));
+  console.log(fizzbuzz(30));
